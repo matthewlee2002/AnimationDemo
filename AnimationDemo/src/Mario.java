@@ -1,6 +1,7 @@
 
 
 import java.awt.*;
+import java.awt.geom.Rectangle2D;
 import java.util.*;
 
 import processing.core.PImage;
@@ -25,8 +26,11 @@ public class Mario extends Sprite {
 	}
 
 	public void act(ArrayList<Shape> obstacles) {
+		this.moveByAmount(0, 5);
 		for (Shape s : obstacles) {
-			// Hi
+			if (this.intersects((Rectangle2D) s)) {
+				this.moveByAmount(0, -5);
+			}
 		}
 	}
 
