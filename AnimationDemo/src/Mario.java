@@ -16,12 +16,12 @@ public class Mario extends Sprite {
 
 	// METHODS
 	public void walk(int dir) {
-		x+=dir;
+		x += 5*dir;
 	}
 
 	public void jump() {
 		y -= 10;
-		//vaibhav, if you get this message, let me know!!!!!!!!!!!!1
+		
 	}
 
 	public void act(ArrayList<Shape> obstacles) {
