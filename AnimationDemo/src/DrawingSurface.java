@@ -35,7 +35,6 @@ public class DrawingSurface extends PApplet {
 		scale(xRatio,yRatio);
 
 		// Draw stuff
-		rect(0,0,10,10);
 
 	} 
 	
